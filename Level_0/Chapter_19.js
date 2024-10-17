@@ -1,8 +1,6 @@
 // 최대공약수 최소공배수
-
 function solution(n, m) {
-  var answer = [];
-  let gcp = 0;
+  let answer = [];
   if (m % n === 0) answer = [n, m];
   else {
     for (let i = 1; i <= m; i++) {
@@ -11,3 +9,5 @@ function solution(n, m) {
   }
   return answer;
 }
+
+solution(3, 12);
